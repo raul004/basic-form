@@ -16,12 +16,13 @@ body {
     align-items: center;
 }
 
+
+/* STYLE CONTAINER */
 .container {
     background-color: #fafafa;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    width: 25%;
-    max-width: 100%;
+    width: 23rem;
     overflow: hidden;
 }
 
@@ -30,6 +31,8 @@ body {
     padding: 20px;
 }
 
+
+/* STYLE FORM */
 .form {
     padding: 20px;
 }
@@ -52,6 +55,15 @@ body {
     font-size: 14px;
     width: 100%;
     padding: 10px;
+}
+
+.container > .form > .form-control input::-webkit-inner-spin-button,
+.container > .form > .form-control input::-webkit-outer-spin-button {
+    appearance: none;
+}
+
+.form-control > input:focus {
+    outline: none;
 }
 
 .form-control i {
@@ -80,8 +92,8 @@ body {
     cursor: pointer;
 }
 
-/* error label and success label */
 
+/* ERROR LABEL AND SUCCESS LABEL */
 .form-control.success input{
     border-color: #2ecc71;
 }
@@ -103,4 +115,15 @@ body {
 .form-control.error small {
     color: #e74c3c;
     visibility: visible;
+}
+
+
+/* RESPONSIVE SCREEN 500px */
+@media screen and (max-width: 500px) {
+    .container {
+        width: 80%;
+        height: 90%;
+        align-items: center;
+        justify-content: center;
+    }
 }
